@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respawn Arena</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            color: #fff;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+        }
+        nav{    
+            width: 100%;
+            height: 100px;
+        }
+        #logo{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        #logo h1{
+            font-size: 30px;
+            line-height: 90px;
+            padding-left: 100px;
+            color: #fff;
+        }
+        #menu{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        #menu ul li{
+            float: left;
+            list-style-type: none;
+            padding-left: 50px;
+            line-height: 90px;
+            font-size: 20px;
+            color: #fff;
+        }
+        #menu ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        #menu ul li:hover{
+            transform: scale(1.1);
+        }
+        #slider_first{
+            width: 100%;
+            height: 573px;
+        }
+        #whole{
+            width: 300%;
+            height: 573px;
+            display: flex;
+            animation-name: one_animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes one_animation {
+            0% {
+                margin-left: 0;
+            }
+            25% {
+                margin-left: -100%;
+            }
+            50% {
+                margin-left: -200%;
+            }
+            75% {
+                margin-left: 0;
+            }
+            100% {
+                margin-left: 0;
+            }
+        }
+       #one{
+            width: 100%;
+            height: 573px;
+            background-color: aqua;
+        }
+        #main{
+            width: 100%;
+            height: 573px;
+            position: absolute;
+            background-color: aqua;
+        }  
+        #main img{
+             width: 100%;
+            height: 573px;
+        } 
+        #back{
+             width: 100%;
+            height: 573px;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.288);
+        }
+        #back h3{
+            width: 400px;
+            font-size: 60px;
+            color: #fff;
+            padding-left: 570px;
+            padding-top: 250px;
+            text-align: center;
+        }
+        #video_content{
+            width: 100%;
+            height: 600px;
+            background-color: #000;
+            display: flex;
+        }
+        #video_box{
+            width: 50%;
+            height: 600px;
+            padding-left: 40px;
+        }
+        #video_content video{
+            width: 100%;
+            height: 500px;
+            border-radius: 20px;
+            padding-top: 50px;
+        }
+        #content{
+            width: 40%;
+            height: 400px;
+            margin-left: 50px;
+            margin-top: 100px;
+            box-shadow: 0px 0px 15px;
+            border-radius: 15px;
+            color: #fff;
+        }
+        #content h1{
+            padding-top: 30px;
+            padding-left: 20px;
+            font-size: 40px;
+            color: #fff;
+        }
+        #content p{
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 20px;
+            color: #fff;
+        }
+        #value{
+             width: 100%;
+            height: 500px;
+            background-color: #0e0e36;
+        }
+        #write{
+            width: 100%;
+            height: 100px;
+        }
+        #write h2{
+            color: #fff;
+            font-size: 40px;
+            padding-left: 40px;
+            padding-top: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #mainbox{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #box{
+            width: 30%;
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px;
+        }
+        #box h2{
+            padding-left: 30px;
+            padding-top: 30px;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #box p{
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: #000;
+        }
+        footer h4{
+            font-size: 30px;
+            padding-right: 900px;
+            padding-left: 50px;
+            padding-top: 20px;
+        }
+        footer i{
+            margin-top: 30px;
+            margin-left: 70px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>Respawn Arena</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li><a href="#video_content">About Us</a></li>
+                    <li><a href="products.html">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="slider_first">
+    <div id="whole">
+     <div id="one">
+        <div id="main">
+            <img src="images/kerde-severin-NVD_32BBZFE-unsplash.jpg" alt="">
+        </div>
+        <div id="back">
+            <div id="h">
+                <h3>PS 5</h3>
+            </div>
+        </div>
+    </div>
+     <div id="one">
+        <div id="main">
+            <img src="images/resul-kaya-xxL1FavYOh0-unsplash.jpg" alt="">
+        </div>
+        <div id="back">
+            <div id="h">
+                <h3>PC</h3>
+            </div>
+        </div>
+    </div>
+     <div id="one">
+        <div id="main">
+            <img src="images/remy-gieling-Zf0mPf4lG-U-unsplash.jpg" alt="">
+        </div>
+        <div id="back">
+            <div id="h">
+                <h3>VR</h3>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+     <section id="video_content">
+        
+        <div id="content">
+            <h1>Since 2020</h1>
+            <p>A futuristic and immersive gaming zone named Respawn Arena, designed with neon lights, high-tech aesthetics, and an adrenaline-fueled atmosphere. The arena should feel like a blend of an esports battlefield and a cyberpunk lounge — glowing LED walls, VR stations, high-end gaming PCs, console setups, and comfortable yet edgy gamer seating. The logo and environment should emphasize energy, competition, and the thrill of coming back stronger (the idea of 'respawn'). Vibrant colors like electric blue, neon green, and deep purple dominate the space, with dynamic lighting effects that make players feel like they’ve stepped into a next-level gaming universe.</p>
+        </div>
+        <div id="video_box">
+            <video src="PixVerse_V5_Transition_360P_make_a_smooth_tran.mp4"controls></video>
+        </div>
+    </section>
+
+    <section id="value">
+        <div id="write">
+            <h2>Why Choose Us</h2>
+        </div>
+        <div id="mainbox">
+            <div id="box">
+                <h2>Ultra‑low Latency</h2>
+                <p>Fiber internet and high‑refresh displays keep your inputs crisp.</p>
+            </div>
+            <div id="box">
+                <h2>VR Arena</h2>
+                <p>Immersive room‑scale experiences for solo or co‑op adventures</p>
+            </div>
+            <div id="box">
+                <h2>Weekly Tournaments</h2>
+                <p>Prizes, bragging rights, and a roaring crowd.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>You can visit us on:</h4>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-threads"></i>
+    </footer>
+</body>
+</html>

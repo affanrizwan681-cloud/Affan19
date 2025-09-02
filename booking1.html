@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respawn Arena</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            color: #fff;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+        }
+        nav{    
+            width: 100%;
+            height: 100px;
+        }
+        #logo{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        #logo h1{
+            font-size: 30px;
+            line-height: 90px;
+            padding-left: 100px;
+            color: #fff;
+        }
+        #menu{
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        #menu ul li{
+            float: left;
+            list-style-type: none;
+            padding-left: 50px;
+            line-height: 90px;
+            font-size: 20px;
+            color: #fff;
+        }
+        #menu ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        #menu ul li:hover{
+            transform: scale(1.1);
+        }
+        #book{
+            width: 100%;
+            height: 673px;
+            background-color: #0e0e36;
+        }
+        #book h2{
+            padding-left: 50px;
+            padding-top: 50px;
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #box{
+            width: 100%;
+            height: 400px;
+            margin-top: 70px;
+        }
+        #box1{
+            width: 30%;
+            height: 480px;
+            margin-left: 550px;
+            border-radius: 30px;
+            box-shadow: 0px 0px 20px;
+        }
+        #box form{
+            padding-left: 20px;
+            padding-top: 20px;
+            font-size: 33px;
+        }
+        #box form input{
+            width: 70%;
+            height:20px;
+            border-radius: 5px;
+            color: #000;
+        }
+        textarea{
+            width: 90%;
+            height: 180px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #000;
+        }
+        #btn{
+            width: 30%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 280px;
+            color: #000;
+        }
+        #btn:hover{
+            background-color: #D5D0BC;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <div id="logo">
+                <h1>Respawn Arena</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Us</a></li>
+                    <li><a href="products.html">Gallery</a></li>
+                    <li>Booking</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="book">
+        <h2>Contact Us for Booking and Details</h2>
+        <div id="box">
+            <div id="box1">
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <br><br>
+                    <label>Email</label>
+                    <input type="email"  placeholder="Enter Your Email" required>
+                    <br><br>
+                    <label>Message</label>
+                    <textarea placeholder="Enter Your Message" required></textarea>
+                    <button id="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
